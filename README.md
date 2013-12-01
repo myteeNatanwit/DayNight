@@ -1,7 +1,7 @@
 Day Night
 =========
 
-Very simple time detectiong to change the Dom to its day/night class. However, this required as an important feature of the project with Toptal. The sample shows a few classes affect by the time. By adding a timer, the UI can be richer presented. 
+Very simple time detecting to change the Dom to its day/night class. However, this required as an important feature of the project with Toptal. The sample shows a few classes affect by the time. By adding a timer, the UI can be richer presented. 
 
 #idea
 Checking current loading time, if it is between 7am and 8pm then it is day time.
