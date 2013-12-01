@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>simple day night</title>
+    
+</head>
+<style>
+
+body{
+margin:0;
+padding:0;
+
+}
+
+.box{
+padding:20px;
+left:0;
+top:0;
+display:block;
+margin:10px;
+width:400px;
+height:400px;
+background: rgba(0,0,0,0.6);
+}
+
+.day body{
+background: url('asset/day.jpg') no-repeat;
+background-size:cover;
+background-color: gray;
+color:red;
+}
+
+.day h1{
+color: yellow;
+}
+
+.day .box{
+margin-left:60px;
+background: rgba(100,0,0,0.6);
+}
+
+.night h1{
+color: green;
+}
+
+.night body{
+background: url('asset/night.jpg') no-repeat;
+background-color: DarkCyan ;
+background-size:cover;
+color:blue;
+}
+
+.night .box{
+margin-left:60px;
+background: rgba(10,100,10,0.6);
+}
+
+
+</style>
+<body>
+<h1> this is title </h1>
+<div class="box"> <h2> this is sample text</h2>
+<button onclick="changetoday()">force day</button> <br>
+<button onclick="changetonight()">force to night class</button>
+</div>
+</body>
+<script type="text/javascript">
+
+function changetoday() {
+  document.documentElement.className= "day";
+
+}
+
+function changetonight() {
+  document.documentElement.className= "night";
+}
+
+var currentTime = new Date().getHours();
+if (7 <= currentTime && currentTime < 20) {
+  document.documentElement.className= "day";
+  
+}
+else
+{
+   document.documentElement.className= "day";
+
+}
+
+
+</script>
+</html>
